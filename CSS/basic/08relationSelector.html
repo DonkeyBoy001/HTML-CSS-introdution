@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 
+        为div的子元素span1 设置红色
+        */
+        /* 子元素选择器 */
+        div > span{
+            color: red;
+        }
+
+        /* 后代元素选择器 */
+        div span{
+            color: wheat;
+        }
+
+        div > span > div{
+            color: red;
+        }
+
+        /* 兄弟元素选择器
+            选择下一个兄弟
+        */
+
+        p + span{
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 
+        父元素 
+            div 是p的 父元素
+        子元素
+            p 和 span2 是div的子元素 
+        祖先元素
+            父元素也是 祖先元素
+            div是span1 
+        后代元素
+            子元素也是后代元素
+        兄弟元素
+            p和span2是兄弟元素
+    -->
+
+    <div>
+        i am a div
+        <p>
+        <span>我是p中的 span1</span>
+        </p>
+
+        <span>我是div中的 span2</span>
+    </div>
+    <div>
+    <span> 我是span3</span>
+    </div>
+    <span> 我是span4</span>
+</body>
+</html>

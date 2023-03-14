@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            border: 10px red solid;
+        /* 外边距 (margin）
+            不会影响盒子可见框大小
+            但是外边距 会影响盒子位置
+            但是外边距会影响盒子的位置
+            一共有四个方向的外边距，
+                margin-top
+                    上外边距，设置一个正值 --》元素会向下移动
+                margin-right
+                margin-bottom
+                margin-left
+                    左外边距，设置一个正值，元素会向右移动
+                
+                margin也可以设置为 负值
+                margin影响盒子实际占用空间的大小
+         */
+            margin-top: 100px;
+            margin-left: 100px;
+            margin-bottom: -200px;
+        }
+
+    .box2{
+        width: 220px;
+        height: 220px;
+        background-color: yellow;
+        margin: 100px;
+        /* 上右下左都是100 */
+    }
+         
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

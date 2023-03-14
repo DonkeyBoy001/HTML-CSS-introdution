@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .s1{
+            background-color: yellow;
+            
+            /* 
+                行内元素的盒模型
+                    行内元素不支持 设置宽度和高度
+            */
+
+            /* width: 100px; */
+            /* height: 100px; */
+
+            /* padding: 100px; */
+            /* 
+                    可以设置padding 但是垂直方向 不影响布局
+            */
+            /* border: 100px solid red; */
+            /* 
+                    可以设置border 但是垂直方向 不影响布局
+            */
+
+            margin: 100px;
+            /* 水平方向 不合并 */
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+        }
+
+        a{
+            /* 
+            通过 display 将 行内元素 转为 块元素
+            display 设置元素显示类型 
+                可选值
+                    inline 将元素设置为行内元素
+                    block 将元素设置为块元素
+                    inline-block 行内块元素：
+                                    特点： 既可以 设置宽度 和 高度， 又不会 独占一行
+                    table 元素设置为表格
+                    none 元素在页面中隐藏
+
+                visbility 可以用来设置元素的显示状态
+                    visible 默认值 显示 
+                    hidden 隐藏元素
+
+                display none 直接消失
+                visbility hidden 消失，但是位置还在
+                
+            */
+            /* display: block; */
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            /* visibility: hidden; */
+        }
+</style>
+</head>
+<body>
+    <a href="javascript:;">超链接</a>
+    <a href="javascript:;">超链接</a>
+    <a href="javascript:;">超链接</a>
+
+    <span class="s1">我是 span</span>
+    <span class="s1">我是 span2</span>
+
+    <div class="box1">我是div</div>
+</body>
+</html>

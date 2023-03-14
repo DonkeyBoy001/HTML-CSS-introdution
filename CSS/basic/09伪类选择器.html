@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 
+        将ul第一个li设置为红色
+        
+        使用伪类：
+            描述一个元素的特殊状态
+                第一个子元素
+                被点击的元素
+                鼠标移入的元素
+
+        伪类一般情况下，都是使用:开头
+            :first-type
+
+            eg: first-child 第一个子元素
+                last-child 最后一个子元素
+                nth-child(n) 第n个子元素
+
+                2表示第2个
+                n表示所有
+                2n表示选择偶数为的元素
+                2n+1表示奇数位置元素
+
+        以上这些伪类 都是根据所有的 子元素进行排序的
+
+        不区分类型
+        frist-of-type{
+        }
+
+        not() 否定伪类
+        选择所有，除了第三个，全变为黄色
+        ul > li:not(:nth-child(3)){
+            color: yellow;
+        }
+        */
+        ul > li:first-child{
+            color: red;
+        }
+
+        ul >li:nth-child(2){
+            color: blue;
+        }
+
+        ul > li:first-of-type{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+        <li>forth</li>
+        <li>fifth</li>
+    </ul>    
+</body>
+</html>

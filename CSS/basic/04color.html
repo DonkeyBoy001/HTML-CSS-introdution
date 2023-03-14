@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 颜色单位
+
+        RGB值：
+            通过三种不同的颜色调配不同的颜色
+            R red
+            G green
+            B blue
+
+            每一种颜色范围在0 -- 255之间 0-100% 之间
+
+            语法： RGB(红 绿 蓝)
+
+
+            RGBA 就是在RGB上 多一个A 代表半透明效果
+            A表示透明度
+            0表示 完全透明
+            1表示 不透明
+            0.5半透明
+        
+            十六进制的RGB值：
+            语法：#红色绿色蓝色颜色浓度通过 00-ff
+        
+            */
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            background-color: rgb(255,0,0);
+            background-color: rgb(0,255,0);
+            background-color: rgb(0,0,0);
+            background-color: rgba(106, 153, 83, .5);
+            background-color: #ff0000;;
+        }
+        
+</style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>

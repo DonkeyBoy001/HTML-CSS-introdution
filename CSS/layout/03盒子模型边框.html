@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            /* 
+            内容区 content：
+                所有子元素都在内容区
+                width 和 height设置内容区大小
+            */
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+
+            
+            /* border-width: 10px; */
+            /* 
+            border-width
+            制动四个方向 边框粗细
+            默认 3px
+            不写就是默认值
+            */
+            border-width: 10px 20px 30px 40px;
+            /* 上 右 下 左 */
+            /* 
+            还有一组 单独指定某一边
+            border-top-width
+            border-left-width
+            */
+            
+            /* border-color: red; */
+            /* 规则同上 */
+            border-color: red yellow blue green;
+
+            /* border-styple 指定边框样式
+                solid 实线
+                dotted 点状虚线
+                dashed 虚线
+                double 双线 */
+            /* border-style: solid; */
+
+            border-style: solid dotted dashed double;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">我是div1</div>
+</body>
+</html>

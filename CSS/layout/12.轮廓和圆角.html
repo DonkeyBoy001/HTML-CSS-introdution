@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+
+            /* border: 10px red solid; */
+            /* 
+            outline 用来设置元素的轮毂线
+            用法 和 border 一模一样
+
+            和 border的不通点在于， 轮廓不会影响可见框的大小
+            */
+            /* outline: 10px red solid; */
+
+            /* box-shadow 设置元素阴影 */
+            /* 前两个值 阴影偏移量
+            因为 阴影和 本体重合的
+
+            第一个参数 左侧偏移量： 设置阴影的水平位置 正值右移动 负值左移动
+            第二个参数 垂直偏移量： 正值向下移动 负值向上移动
+            第三个值 阴影模糊半径
+            第四个参数 阴影颜色
+            */
+            box-shadow: 10px 10px 10px rgba(0,0,0,.5);
+        }
+
+        /* 鼠标移动到这里，会增加边框线 */
+        .box1:hover{
+            outline: 10px red solid;
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+
+            /* border-radius 设置圆角
+            border-top-left-radius
+            border-top-right-radius
+            border-bottom-left-radius
+            
+            参数 表示 半径长度
+            */
+            /* border-radius: 10px; */
+            /* 可以指定四个角
+                四个值：
+                    左上
+                    右上
+                    右下
+                    左下
+            */
+            border-radius: 10px 20px 30px 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box2"></div>
+    <span>hello</span>
+</body>
+</html>

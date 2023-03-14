@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网易的新闻列表</title>
+    <link rel="stylesheet" href="../layout/reset.css">
+    <style>
+        /* body{
+            background-color: #bfa;
+        } */
+
+        /* 设置容器的样式 */
+        .news-wrapper{
+            /* 设置宽度 */
+            width: 300px;
+            /* 设置高度 */
+            height: 358px;
+            /* 设置居中 */
+            margin: 50px auto;
+            /* 设置背景颜色 */
+            background-color: #fff;
+            /* 设置上边框 */
+            border-top: 1px solid #ddd;
+        }
+        /* 设置news-title */
+        .news-title{
+            height: 30px;
+            /* 为了边框和文字宽度一致，需要将h2转化为行内元素 */
+            display: inline-block;
+            border-top: 1px red solid;
+            /* 通过margin-top 将h2上移，盖住上边框 */
+            margin-top: -1px;
+            padding-top: 10px;
+        }
+        /* 设置title中超链接的样式 */
+        .news-title a{
+            /* 去掉下换线 */
+            text-decoration: none;
+            color: #404064;
+            /* 加粗 */
+            font-weight: bold;
+            /* margin-top: 10px; */
+        }
+
+        /* 设置图片容器高度
+        避免下面文字拱上来 */
+        .news-img{
+            
+            height: 150px;
+            width: 300px;
+        }
+
+        /* 设置图片的文字效果 */
+        .news-img .img-title{
+            /* 去掉下换线 */
+            text-decoration: none;
+            /* 上移动文字 */
+            margin-top: -30px;
+            color: #fff;
+            font-weight: bold;
+            /* 设置padding 文字居中 */
+            padding-left: 50px;
+        }
+
+        /* 设置新闻列表 */
+        .news-list{
+            margin-top: 20px;
+            /* padding-left: 14px; */
+
+            /* 指定项目符号 */
+            /* list-style: square;
+            color: #666; */
+        }
+        /* 设置li中文字体 */
+        .news-list li{
+            margin-bottom: 17px;
+        }
+        .news-list li a{
+            text-decoration: none;
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* 设置超链接，鼠标移入特效 */
+        .news-list li a:hover{
+            color: red;
+        }
+
+        /* 为每一行前面 加 小方括号 */
+        .news-list li::before{
+            content: "■";
+            color: rgb(151, 151, 151);
+            font-size: 12px;
+            margin-right: 4px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 创建新闻列表的外侧容器 -->
+    <div class="news-wrapper">
+        <!-- 创建标题标签 -->
+        <h2 class="news-title">
+            <a href="#">军事</a>
+        </h2>
+        <!--创建一个图片容器 -->
+        <div class="news-img">
+            <img src="../exercise/img/4.jpg" alt="military"
+                height="150px"
+                width="300px";
+            >
+
+            <!-- 创建图片标题 -->
+            <h3 class="img-title">
+                军事局势，乱七八糟的图片
+            </h3>
+        </div>
+
+        <!-- 新闻列表 -->
+        <ul class="news-list">
+            <li>
+                <a href="a">乔治：我爱LA,喜欢和LBJ一起打球</a>
+            </li>
+            <li>
+                <a href="a">格林：大家好，我是追蛋格林！</a>
+            </li>
+            <li>
+                <a href="a">乔治：我爱LA,喜欢和LBJ一起打球</a>
+            </li>
+            <li>
+                <a href="a">乔治：我爱LA,喜欢和LBJ一起打球</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
