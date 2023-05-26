@@ -21,11 +21,15 @@
             margin: 100px auto;
         }   
         /* 设置li，让其水平排列 */
+        /*Set li to be arranged horizontally*/
         .nav li{
             /* 设置宽度 和 高度 */
             /* width: 1210px; */
             /* height: 48px; */
+            /* in order to make the box in one line */
             float: left;
+
+            /* 文字 在 父元素 垂直居中 */
             line-height: 48px;
             /* background-color: red; */
         }
@@ -33,25 +37,33 @@
         /* 设置a的样式 */
         .nav a{
             /* 将a转换为块元素 */
+            /*Convert a to a block element*/
             display: block;
             /* 去除下划线 */
+            /* Remove the underline */
             text-decoration: none;
             color: #777777;
             font-size: 18px;
-            padding: 0 40px;
+            padding: 0 44px;
         }
 
         .nav li:last-child a{
-            padding: 0 42px 0 42px;
+            padding: 0 47px 0 47px;
         }
 
         /* 设置鼠标移入背景颜色 */
+        /*Set the background color for mouse movement*/
         .nav a:hover{
             background-color: #3F3F3F;
+            /* 字体颜色  Font color */
+            color: #E8E7E3;
         }
     </style>
 </head>
 <body>
+    <!-- 创建导航条结构
+    Create a navigation bar structure
+    -->
     <ul class="nav">
         <li>
             <a href="#">HTML/CSS</a>

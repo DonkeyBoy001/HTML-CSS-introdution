@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        header, main, footer {
+            width: 1000px;
+            margin:  0 auto;
+        }
+
+        /* 浮动就变成水平排列
+        因为不浮动，就是块，快独占一行 */
+        nav, aside, article {
+            float: left;
+        }
+
+        /* 设置头部 */
+        header{
+            height: 200px;
+            background-color: silver;
+        }
+        /* 设置主体 */
+        main{
+            height: 400px;
+            background-color: #bfa;
+            margin: 10px auto;
+        }
+
+        /* 左侧导航 */
+        nav{
+            width: 200px;
+            height: 100%;
+            background-color: yellow;
+        }
+
+        /* 右侧 */
+
+        aside{
+            width: 200px;
+            height: 100%;
+            background-color: pink;
+        }
+        /* 中间 */
+        article{
+            width: 580px;
+            height: 100%;
+            background-color: orange;
+            margin: 0 10px;
+        }
+
+        div{
+            margin: 0 10px 0 0;
+            padding-left: 10px;
+            float: left;
+            width: 270px;
+            height: 50%;
+            background-color: rgb(255, 170, 172);
+        }
+
+        div2{
+            margin: 0 0 0 10px;
+            float: left;
+            width: 280px;
+            height: 50%;
+            background-color: rgb(241, 240, 255);
+        }
+
+        /* 设置尾部 */
+        footer{
+            height: 150px;
+            background-color: tomato;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- 创建头部 -->
+    <header></header>
+    <!-- 创建网页主体 -->
+    <main>
+        <!-- 左侧 -->
+        <nav></nav>
+        <!-- 中间内容 -->
+        <article>
+            <div></div>
+            <div2></div2>
+        </article>
+        <!-- 右侧 -->
+        <aside></aside>
+    </main>
+    <!-- 网页底部 -->
+    <footer></footer>
+</body>
+</html>
