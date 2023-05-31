@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 60px;
+        }
+
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        /* 绝对定位：
+            position: absolute 开启决定对应
+            开启 决定定位： 元素从文档流中脱离
+            改变元素性质： 行内 变成 块 
+            提升元素层级
+
+
+            绝对定位的原点就是   父元素中最近的一个开启了相对定位的左上角
+
+            containing block 当前块最近的 父元素
+
+            绝对定位的包合块：
+                    离它最近的开启了定位的祖先元素
+
+                    开启了定位： position 属性不为 static 就开启定位了
+                    
+        */
+
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</body>
+</html>
