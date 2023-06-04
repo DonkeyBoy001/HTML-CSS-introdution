@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 500px;
+            height: 500px;
+            background-color: #bfa;
+            position: relative;
+        }
+
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            position: absolute;
+
+            margin: auto;
+            
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+   
+        }
+
+        /* 水平布局
+        margin left + bounder left + padding left + width + margin right +.....(same as left)
+        
+        开启绝对定位后， 水平方向布局 添加 left 和 right
+        左右增加 left 和 right
+        left + margin left + bounder left + padding left + width + margin right +.....(same as left)
+        */
+
+        /* 垂直方向布局也得类似
+        
+        */
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

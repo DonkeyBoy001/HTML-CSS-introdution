@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../layout/reset.css">
+    <title>导航条</title>
+    <style>
+
+        body{
+            height: 3000px;
+        }
+        
+        /* ul {
+            list-style-type: none;
+        } */
+
+
+        /* 增加粘滞定位 */
+        .nav{
+            /*设置 nav大小 
+              Set the nav size
+            */
+            width: 1210px;
+            height: 48px;
+            background-color: #E8E7E3;
+            margin: 100px auto;
+            position: sticky;
+            top:10px;
+            /**
+            当元素的position属性设置为sticky时则开启了元素的粘滞定位
+            粘滞定位和相对定位的特点基本一致
+            下同的是粘滞定位可以在元素到达菜个位置时将其固定
+            */
+        }   
+
+
+
+        /* 设置li，让其水平排列 */
+        /*Set li to be arranged horizontally*/
+        .nav li{
+            /* 设置宽度 和 高度 */
+            /* width: 1210px; */
+            /* height: 48px; */
+            /* in order to make the box in one line */
+            float: left;
+
+            /* 文字 在 父元素 垂直居中 */
+            line-height: 48px;
+            /* background-color: red; */
+        }
+
+        /* 设置a的样式 */
+        .nav a{
+            /* 将a转换为块元素 */
+            /*Convert a to a block element*/
+            display: block;
+            /* 去除下划线 */
+            /* Remove the underline */
+            text-decoration: none;
+            color: #777777;
+            font-size: 18px;
+            padding: 0 44px;
+        }
+
+        .nav li:last-child a{
+            padding: 0 47px 0 47px;
+        }
+
+        /* 设置鼠标移入背景颜色 */
+        /*Set the background color for mouse movement*/
+        .nav a:hover{
+            background-color: #3F3F3F;
+            /* 字体颜色  Font color */
+            color: #E8E7E3;
+        }
+    </style>
+</head>
+<body>
+    <!-- 创建导航条结构
+    Create a navigation bar structure
+    -->
+    <ul class="nav">
+        <li>
+            <a href="#">HTML/CSS</a>
+        </li>
+        <li>
+            <a href="#">Broswer Side</a>
+        </li>
+        <li>
+            <a href="#">Service Side</a>
+        </li>
+        <li>
+            <a href="#">Programming</a>
+        </li>
+        <li>
+            <a href="#">XML</a>
+        </li>
+        <li>
+            <a href="#">Web Building</a>
+        </li>
+        <li>
+            <a href="#">Reference</a>
+        </li>
+    </ul>
+</body>
+</html>
